@@ -47,11 +47,11 @@ const Setup = (data) => {
     `;
   });
   scoreboardHtml += `
-    <div class="scoreboard-info-beam" style="background: rgba(241, 229, 66, 0.651)">
+    <div class="scoreboard-info-beam" style="background: linear-gradient(135deg, #49c59a 0%, #2f9d76 100%); border-radius: 10px; margin-top: 0.8vh; padding: 0.9vh 1.2vh;">
       <div class="info-beam-title-players">
         <p>Total Players</p>
       </div>
-      <div class="info-beam-status" id="total-players" style="color: #ededed"></div>
+      <div class="info-beam-status" id="total-players" style="background: rgba(0,0,0,0.18);"></div>
     </div>
   `;
   $(".scoreboard-info").html(scoreboardHtml);

@@ -1,41 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .container {
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .scoreboard-block {
   display: none;
-  border-radius: 2vh;
   position: absolute;
-  height: fit-content;
-  width: 40vh;
-  background-color: rgb(23 23 23 / 80%);
-  right: 3vh;
-  top: 30vh;
+  width: 34vh;
+  right: 2.5vh;
+  top: 50%;
+  transform: translateY(-50%);
   margin: 1vh;
+  background: rgba(8, 11, 13, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
 }
 
 .scoreboard-header {
-  border-radius: 1vh;
   position: relative;
-  width: 92%;
-  height: 5vh;
-  margin: 1.7vh 1.3vh 0vh 1.7vh;
-  background: rgba(241, 229, 66, 0.651);
+  width: 100%;
+  padding: 1.6vh 0;
+  background: linear-gradient(135deg, #49c59a 0%, #2f9d76 100%);
 }
 
 .scoreboard-header > p {
   text-align: center;
-  font-weight: bold;
-  color: #ededed;
-  padding: 1.3vh;
+  font-weight: 700;
+  color: #06281d;
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5vh;
+  font-size: 2.2vh;
+  letter-spacing: 0.35vh;
+  margin: 0;
 }
+
+.scoreboard-info {
+  padding: 1vh 1.4vh 1.4vh;
+}
+
 #status-tab-label {
   position: absolute;
   font-family: 'Poppins', sans-serif;
@@ -44,53 +50,77 @@
 }
 
 .info-beam-title {
-  position: absolute;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3vh;
-  letter-spacing: 0.1vh;
-  left: 2.7vh;
-  line-height: 4vh;
-  font-weight: bold;
-  color: #ededed;
+  font-size: 1.5vh;
+  letter-spacing: 0.08vh;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.info-beam-title p {
+  margin: 0;
 }
 
 .info-beam-title-players {
-  position: absolute;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3vh;
-  letter-spacing: 0.1vh;
-  left: 2.4vh;
-  line-height: 4vh;
-  font-weight: bold;
-  color: #ededed;
+  font-size: 1.5vh;
+  letter-spacing: 0.08vh;
+  font-weight: 600;
+  color: #06281d;
+}
+
+.info-beam-title-players p {
+  margin: 0;
 }
 
 .info-beam-status {
-  position: absolute;
   font-family: 'Poppins', sans-serif;
-  right: 3vh;
-  float: left;
-  text-align: left;
-  line-height: 4.25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.4vh;
+  height: 3.4vh;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 1.5vh;
 }
 
 .scoreboard-info-beam {
-  margin-top: .3vh;
   position: relative;
-  height: 4.25vh;
-  width: 100%;
-  border-bottom-left-radius: 2vh;
-  border-bottom-right-radius: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9vh 0.6vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.scoreboard-info-beam:last-child {
+  border-bottom: none;
+}
+
+#total-players {
+  min-width: 0;
+  height: auto;
+  border-radius: 8px;
+  padding: 0.5vh 1.4vh;
+}
+
+#total-players p {
+  margin: 0;
+  font-weight: 700;
+  color: #06281d;
+  font-size: 1.5vh;
+  white-space: nowrap;
 }
 
 .fa-times {
-  color: rgba(241, 229, 66, 0.651);
+  color: #ff5c5c;
 }
 
 .fa-check {
-  color: #28a745;
+  color: #49c59a;
 }
 
 .fa-clock {
-  color: #2873a7;
+  color: #f5b942;
 }
