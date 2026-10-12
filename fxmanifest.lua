@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 description 'aicore_scoreboard'
-repository 'https://github.com/0error-scripts/aicore_scoreboard'
+repository 'https://github.com/aicore-fivem/aicore_scoreboard'
 version '1.0.0'
 
 shared_scripts {
